@@ -24,7 +24,7 @@ struct Time subtract(struct Time t2, struct Time t1){
 }
 
 void display(struct Time t3){
-   cout<<t3.h<<":"<<t3.m<<":"<<t3.s<<"\n";
+   cout<< setfill('0') << setw(2) << t3.h<<":"<<t3.m<<":"<<t3.s<<"\n";
 }
 
 int main(){
