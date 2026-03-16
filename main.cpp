@@ -22,11 +22,9 @@ struct Time subtract(struct Time t2, struct Time t1){
    t3.s = diff % 60;
    return t3;
 }
-
 void display(struct Time t3){
    cout<< setfill('0') << setw(2) << t3.h<<":"<<t3.m<<":"<<t3.s<<"\n";
 }
-
 int main(){
    struct Time t1,t2,t3;
    cout<<"What time was it?" << "\n";
