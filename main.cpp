@@ -10,16 +10,16 @@ void getTime(struct Time &t){
 }
 struct Time subtract(struct Time t2, struct Time t1){
    struct Time t3;
-   int t1_seconds = t1.h * 3600 + t1.m * 60 + t1.s;
-   int t2_seconds = t2.h * 3600 + t2.m * 60 + t2.s;
-   int diff = t2_seconds - t1_seconds;
+   int t1_seconds=t1.h *3600 +t1.m*60+t1.s;
+   int t2_seconds=t2.h *3600 +t2.m*60+t2.s;
+   int diff = t2_seconds-t1_seconds;
    if (diff < 0) {
        diff = diff + (24 * 3600);
    }
-   t3.h = diff / 3600;
-   diff = diff % 3600;
-   t3.m = diff / 60;
-   t3.s = diff % 60;
+   t3.h = diff/3600;
+   diff = diff%3600;
+   t3.m = diff/60;
+   t3.s = diff%60;
    return t3;
 }
 void display(struct Time t3){
